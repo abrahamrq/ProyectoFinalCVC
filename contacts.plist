@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Deyanira Gloria Trujilla Creado</string>
+		<key>area</key>
+		<string>Dirección CVC</string>
+		<key>email</key>
+		<string>deyanira.trujillo@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rosa Nelly Sierra Contreras</string>
+		<key>area</key>
+		<string>Auxiliar Administrativo Dirección CVC</string>
+		<key>email</key>
+		<string>nelly.sierra@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Denisse Cantú Barajas</string>
+		<key>area</key>
+		<string>Administración CVC</string>
+		<key>email</key>
+		<string>denisse.cantu@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Graciela Alejandra Quintanilla Palacios</string>
+		<key>area</key>
+		<string>Coord. Innovación y Planeación Estratégica</string>
+		<key>email</key>
+		<string>gquintanilla@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Jorge Rubén Bárcenas Diaz</string>
+		<key>area</key>
+		<string>Innovación y Planeación Estratégica</string>
+		<key>email</key>
+		<string>jorge.barcenas@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Liliana Flores González</string>
+		<key>area</key>
+		<string>Innovación y Planeación Estratégica</string>
+		<key>email</key>
+		<string>lilianaflores_gonzalez@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Cynthia Carolina Nuñez Alvarez</string>
+		<key>area</key>
+		<string>Tec Challenge</string>
+		<key>email</key>
+		<string>abigail.aguilar@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Angélica Yolanda Zuñiga Montemayor</string>
+		<key>area</key>
+		<string>Dir. Evaluación y retroalimentación de competencias</string>
+		<key>email</key>
+		<string>azuniga@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Amanda Rey Castillo González</string>
+		<key>area</key>
+		<string>Evaluación y retroalimentación de competencias</string>
+		<key>email</key>
+		<string>acastillo04@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Leonardo Paez Hervert</string>
+		<key>area</key>
+		<string>Evaluación y retroalimentación de competencias</string>
+		<key>email</key>
+		<string>lpaez@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rodrigo López Neri</string>
+		<key>area</key>
+		<string>Dir. Desarrollo Profesional y Vinculación</string>
+		<key>email</key>
+		<string>rodrigo.lopezn@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mónica Marcela Morales Cortés</string>
+		<key>area</key>
+		<string>Desarrollo Profesional y Vinculación (Mejora Continua)</string>
+		<key>email</key>
+		<string>mm.morales@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Adriana Piedra Santa Mollinedo</string>
+		<key>area</key>
+		<string>Desarrollo Profesional y Vinculación</string>
+		<key>email</key>
+		<string>padriana@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rosa María Rodríguez Ramírez</string>
+		<key>area</key>
+		<string>Desarrollo Profesional y Vinculación</string>
+		<key>email</key>
+		<string>rossy_rodriguez@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rosa María Rodríguez Ramírez</string>
+		<key>area</key>
+		<string>Desarrollo Profesional y Vinculación</string>
+		<key>email</key>
+		<string>rossy_rodriguez@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Grecia Lizeth García Escobedo</string>
+		<key>area</key>
+		<string>Desarrollo Profesional y Vinculación</string>
+		<key>email</key>
+		<string>lizeth.garcia@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ana Lilia Mendoza Elizondo</string>
+		<key>area</key>
+		<string>Desarrollo Profesional y Vinculación</string>
+		<key>email</key>
+		<string>almendozae@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Damián Hernández Valdez</string>
+		<key>area</key>
+		<string>Desarrollo Profesional y Vinculación</string>
+		<key>email</key>
+		<string>dhvaldez@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fátima Itzel Maldonado González</string>
+		<key>area</key>
+		<string>Desarrollo Profesional y Vinculación</string>
+		<key>email</key>
+		<string>f.maldonado@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Erika Lozano Soto</string>
+		<key>area</key>
+		<string>Desarrollo Profesional y Vinculación</string>
+		<key>email</key>
+		<string>erika.lozano@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Judith Villarreal Rodríguez</string>
+		<key>area</key>
+		<string>Dir. Experiencia Profesional</string>
+		<key>email</key>
+		<string>judith.villarreal@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sandra Gabriela Martínez Leal</string>
+		<key>area</key>
+		<string>Experiencia Profesional</string>
+		<key>email</key>
+		<string>sgml@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Carolina Acosta Valero</string>
+		<key>area</key>
+		<string>Experiencia Profesional</string>
+		<key>email</key>
+		<string>carolina.acosta@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Brenda Nelly Santos Guevara</string>
+		<key>area</key>
+		<string>Experiencia Profesional</string>
+		<key>email</key>
+		<string>brendasantos@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lorena Sofia Ramirez Neri</string>
+		<key>area</key>
+		<string>Experiencia Profesional</string>
+		<key>email</key>
+		<string>lorena_sofia@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ana Lucia Santos Villanueva</string>
+		<key>area</key>
+		<string>Experiencia Profesional</string>
+		<key>email</key>
+		<string>asantosv@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Alicia Lucero Briseño Juárez</string>
+		<key>area</key>
+		<string>Experiencia Profesional</string>
+		<key>email</key>
+		<string>lucero.briseno@itesm.mx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Marlene Irasema Flores Salazar</string>
+		<key>area</key>
+		<string>Experiencia Profesional</string>
+		<key>email</key>
+		<string>marlene.flores@itesm.mx</string>
+	</dict>
+</array>
+</plist>

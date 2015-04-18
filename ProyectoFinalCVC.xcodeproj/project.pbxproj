@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3224A87B1AE1FE2E003555AA /* contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3224A87A1AE1FE2E003555AA /* contacts.plist */; };
 		FB24C0AE1AE02445000F75D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB24C0AD1AE02445000F75D5 /* main.m */; };
 		FB24C0B11AE02445000F75D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB24C0B01AE02445000F75D5 /* AppDelegate.m */; };
 		FB24C0B41AE02445000F75D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB24C0B31AE02445000F75D5 /* ViewController.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3224A87A1AE1FE2E003555AA /* contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = contacts.plist; sourceTree = "<group>"; };
 		FB24C0A81AE02445000F75D5 /* ProyectoFinalCVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinalCVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB24C0AC1AE02445000F75D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB24C0AD1AE02445000F75D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		FB24C09F1AE02445000F75D5 = {
 			isa = PBXGroup;
 			children = (
+				3224A87A1AE1FE2E003555AA /* contacts.plist */,
 				FB24C0AA1AE02445000F75D5 /* ProyectoFinalCVC */,
 				FB24C0C41AE02446000F75D5 /* ProyectoFinalCVCTests */,
 				FB24C0A91AE02445000F75D5 /* Products */,
@@ -211,6 +214,7 @@
 				FB24C0BC1AE02445000F75D5 /* LaunchScreen.xib in Resources */,
 				FB24C0D21AE0253C000F75D5 /* Logo CVC.jpeg in Resources */,
 				FB24C0B91AE02445000F75D5 /* Images.xcassets in Resources */,
+				3224A87B1AE1FE2E003555AA /* contacts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +426,7 @@
 				FB24C0CD1AE02446000F75D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB24C0CE1AE02446000F75D5 /* Build configuration list for PBXNativeTarget "ProyectoFinalCVCTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				FB24C0D01AE02446000F75D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
