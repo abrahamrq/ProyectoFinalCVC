@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo CVC.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oPg-a6-aNz">
-                                <rect key="frame" x="38" y="99" width="245" height="204"/>
+                                <rect key="frame" x="38" y="133" width="245" height="204"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyV-2k-ua1">
-                                <rect key="frame" x="119" y="366" width="82" height="30"/>
+                                <rect key="frame" x="119" y="379" width="82" height="30"/>
                                 <state key="normal" title="Informacion"/>
                                 <connections>
                                     <segue destination="Vh2-wj-ejl" kind="show" id="XHO-n1-lzb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wh-qd-mn8">
-                                <rect key="frame" x="123" y="404" width="74" height="30"/>
+                                <rect key="frame" x="123" y="417" width="74" height="30"/>
                                 <state key="normal" title="Calendario">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-yG-Wvu">
-                                <rect key="frame" x="116" y="442" width="88" height="30"/>
+                                <rect key="frame" x="116" y="455" width="88" height="30"/>
                                 <state key="normal" title="Contactanos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
