@@ -7,6 +7,7 @@
 //
 
 #import "CalendarTableViewController.h"
+#import "EventViewController.h"
 
 @interface CalendarTableViewController (){
     NSXMLParser *parser;
@@ -54,9 +55,7 @@
     if ([element isEqualToString:@"title"]) {
         [title appendString:string];
     } else if ([element isEqualToString:@"summary"]) {
-        [summary appendString:string];
-        
-        
+        [summary appendString: string];
     }
     
 }
@@ -67,16 +66,17 @@
     
 }
 
-/*
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSString *string = [feeds[indexPath.row] objectForKey: @"link"];
-        [[segue destinationViewController] setUrl:string];
-        
+        NSString *event = [feeds[indexPath.row] objectForKey: @"title"];
+        NSString *sum = [feeds[indexPath.row] objectForKey: @"summary"];
+        [[segue destinationViewController] setEvent:event];
+        [[segue destinationViewController] setSummary:sum];
     }
-} */
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     

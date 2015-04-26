@@ -123,6 +123,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="cZ8-M0-Ka0" kind="show" identifier="showDetail" id="qCR-3m-lrM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -135,6 +138,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQ3-cb-Apd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1754" y="798"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="Yco-1j-rIf">
+            <objects>
+                <viewController id="cZ8-M0-Ka0" customClass="EventViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aS0-Lm-pXK"/>
+                        <viewControllerLayoutGuide type="bottom" id="IGs-Uf-bSd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c0u-cS-DeU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSt-eJ-wPL">
+                                <rect key="frame" x="58" y="113" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRK-7X-DNR">
+                                <rect key="frame" x="88" y="485" width="145" height="30"/>
+                                <state key="normal" title="Agregar a Calendario">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-R8-SMN">
+                                <rect key="frame" x="40" y="190" width="240" height="188"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88663983585858586" green="0.88663983585858586" blue="0.88663983585858586" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="eventlbl" destination="lSt-eJ-wPL" id="0Im-YV-zbp"/>
+                        <outlet property="summarytextview" destination="AFN-R8-SMN" id="Vs9-WE-3sn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txF-PQ-gH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2203" y="798"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VNl-uH-RpB">
