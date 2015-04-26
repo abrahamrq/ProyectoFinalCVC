@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CalendarTableViewController : UITableViewController
+@interface CalendarTableViewController : UITableViewController <NSXMLParserDelegate>
 
 @end
