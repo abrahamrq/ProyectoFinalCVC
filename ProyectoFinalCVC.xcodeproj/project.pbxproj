@@ -10,6 +10,7 @@
 		3224A87B1AE1FE2E003555AA /* contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3224A87A1AE1FE2E003555AA /* contacts.plist */; };
 		3239764B1AED7A6A00E3DDC0 /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3239764A1AED7A6A00E3DDC0 /* CalendarTableViewController.m */; };
 		3239764E1AED8D4D00E3DDC0 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3239764D1AED8D4D00E3DDC0 /* EventViewController.m */; };
+		3239765B1AF1919000E3DDC0 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3239765A1AF1918F00E3DDC0 /* InfoViewController.m */; };
 		CCBA8D081AE207B300EAA713 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBA8D071AE207B300EAA713 /* ContactsTableViewController.m */; };
 		CCBA8D3F1AE2119000EAA713 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBA8D3E1AE2119000EAA713 /* MessageUI.framework */; };
 		FB24C0AE1AE02445000F75D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB24C0AD1AE02445000F75D5 /* main.m */; };
@@ -38,6 +39,8 @@
 		3239764A1AED7A6A00E3DDC0 /* CalendarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewController.m; sourceTree = "<group>"; };
 		3239764C1AED8D4D00E3DDC0 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
 		3239764D1AED8D4D00E3DDC0 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		323976591AF1918F00E3DDC0 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = ../InfoViewController.h; sourceTree = "<group>"; };
+		3239765A1AF1918F00E3DDC0 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = ../InfoViewController.m; sourceTree = "<group>"; };
 		CCBA8D061AE207B300EAA713 /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactsTableViewController.h; path = ../ContactsTableViewController.h; sourceTree = "<group>"; };
 		CCBA8D071AE207B300EAA713 /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactsTableViewController.m; path = ../ContactsTableViewController.m; sourceTree = "<group>"; };
 		CCBA8D3E1AE2119000EAA713 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -98,6 +101,8 @@
 		FB24C0AA1AE02445000F75D5 /* ProyectoFinalCVC */ = {
 			isa = PBXGroup;
 			children = (
+				323976591AF1918F00E3DDC0 /* InfoViewController.h */,
+				3239765A1AF1918F00E3DDC0 /* InfoViewController.m */,
 				3224A87A1AE1FE2E003555AA /* contacts.plist */,
 				CCBA8D061AE207B300EAA713 /* ContactsTableViewController.h */,
 				CCBA8D071AE207B300EAA713 /* ContactsTableViewController.m */,
@@ -251,6 +256,7 @@
 				CCBA8D081AE207B300EAA713 /* ContactsTableViewController.m in Sources */,
 				3239764E1AED8D4D00E3DDC0 /* EventViewController.m in Sources */,
 				FB24C0AE1AE02445000F75D5 /* main.m in Sources */,
+				3239765B1AF1919000E3DDC0 /* InfoViewController.m in Sources */,
 				3239764B1AED7A6A00E3DDC0 /* CalendarTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
