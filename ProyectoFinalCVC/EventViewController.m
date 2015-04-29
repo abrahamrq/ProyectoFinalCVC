@@ -61,11 +61,11 @@
 - (IBAction)addToCalendar:(id)sender {
     
     UIAlertView *alert = [[UIAlertView alloc]
-                          initWithTitle:@"Confirm!"
-                          message:@"Estas seguro de agregar?"
+                          initWithTitle:@"Agregar Evento"
+                          message:@"Estas seguro de que quieres agregarlo a tu calendario?"
                           delegate: self
-                          cancelButtonTitle:@"Cancel"
-                          otherButtonTitles:@"OK", nil];
+                          cancelButtonTitle:@"NO"
+                          otherButtonTitles:@"SI", nil];
     [alert show];
 }
 
