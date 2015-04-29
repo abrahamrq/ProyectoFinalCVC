@@ -50,6 +50,7 @@
     
 }
 
+
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     
     if ([element isEqualToString:@"title"]) {
@@ -114,7 +115,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
-    cell.detailTextLabel.text =[[feeds objectAtIndex:indexPath.row] objectForKey: @"summary"];
+    
+    NSString *p= [[[feeds objectAtIndex:indexPath.row] objectForKey: @"summary"] stringByReplacingOccurrencesOfString:@"&eacute;"
+                                                withString:@""];
+    
+    p =[p stringByReplacingOccurrencesOfString:@"<br>"
+                                    withString:@""];
+    p =[p stringByReplacingOccurrencesOfString:@"&aacute;"
+                                    withString:@"á"];
+    p =[p stringByReplacingOccurrencesOfString:@"&iacute;"
+                                    withString:@"í"];
+    p =[p stringByReplacingOccurrencesOfString:@"&oacute;"
+                                    withString:@"ó"];
+    p =[p stringByReplacingOccurrencesOfString:@"&uacute;"
+                                    withString:@"ú"];
+
+    p =[p stringByReplacingOccurrencesOfString:@"&nbsp;"
+                                    withString:@""];
+    cell.detailTextLabel.text =p;
+    
     cell.textLabel.text = [[feeds objectAtIndex:indexPath.row] objectForKey: @"title"];
     
     // Configure the cell...
