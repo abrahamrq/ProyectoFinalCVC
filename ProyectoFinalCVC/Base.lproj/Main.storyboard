@@ -177,6 +177,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="addbutton" destination="oRK-7X-DNR" id="IxT-f8-D0h"/>
                         <outlet property="eventlbl" destination="lSt-eJ-wPL" id="0Im-YV-zbp"/>
                         <outlet property="summarytextview" destination="AFN-R8-SMN" id="Vs9-WE-3sn"/>
                     </connections>

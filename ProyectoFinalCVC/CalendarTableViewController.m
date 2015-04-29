@@ -117,7 +117,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
     NSString *p= [[[feeds objectAtIndex:indexPath.row] objectForKey: @"summary"] stringByReplacingOccurrencesOfString:@"&eacute;"
-                                                withString:@""];
+                                                withString:@"é"];
     
     p =[p stringByReplacingOccurrencesOfString:@"<br>"
                                     withString:@""];

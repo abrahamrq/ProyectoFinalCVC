@@ -15,5 +15,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *eventlbl;
 @property (strong, nonatomic) IBOutlet UITextView *summarytextview;
 - (IBAction)addToCalendar:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *addbutton;
+
 
 @end
