@@ -135,20 +135,43 @@
              }];
              
          }else{
-        NSString *eventI=[self.summary substringWithRange:NSMakeRange(7, 22)];
+             
+        NSString *eventI;
+             NSInteger i=0;
+             NSInteger i2=0;
+             if ([[self.summary substringWithRange:NSMakeRange(13,1)] isEqualToString:@" "]){
+                 eventI=[self.summary substringWithRange:NSMakeRange(7, 21)];
+                 i=10;
+                 i2=5;
+             }else {
+                 eventI=[self.summary substringWithRange:NSMakeRange(7, 22)];
+                 i=11;
+                 i2=6;
+             }
         NSString *eventA;
         if( [[NSScanner scannerWithString:[self.summary substringWithRange:NSMakeRange(32, 5)]] scanFloat:NULL] ){
-            eventA=[self.summary substringWithRange:NSMakeRange(32, 5)];
-            NSString *eventH=[eventI substringWithRange:NSMakeRange(0, 17)];
-            eventA=[NSString stringWithFormat:@"%@ %@", eventH, eventA];
+            
+            if ([[self.summary substringWithRange:NSMakeRange(13,1)] isEqualToString:@" "]){
+                eventA=[self.summary substringWithRange:NSMakeRange(31, 5)];
+                NSString *eventH=[eventI substringWithRange:NSMakeRange(0, 15)];
+                eventA=[NSString stringWithFormat:@"%@ %@", eventH, eventA];
+            }else{
+                eventA=[self.summary substringWithRange:NSMakeRange(32, 5)];
+                NSString *eventH=[eventI substringWithRange:NSMakeRange(0, 17)];
+                eventA=[NSString stringWithFormat:@"%@ %@", eventH, eventA];
+            }
         }else{
-            eventA=[self.summary substringWithRange:NSMakeRange(31, 22)];
+            if ([[self.summary substringWithRange:NSMakeRange(13,1)] isEqualToString:@" "]){
+                eventA=[self.summary substringWithRange:NSMakeRange(31, 21)];
+            }else {
+                eventA=[self.summary substringWithRange:NSMakeRange(31, 22)];
+            }
         }
-        NSString *helper=[eventI substringWithRange:NSMakeRange(5, 11)];
+        NSString *helper=[eventI substringWithRange:NSMakeRange(5, i)];
         helper =[helper stringByReplacingOccurrencesOfString:@" "
                                         withString:@"-"];
         
-        NSString *helper2=[eventI substringWithRange:NSMakeRange(16,6)];
+        NSString *helper2=[eventI substringWithRange:NSMakeRange(16,i2)];
         eventI=[NSString stringWithFormat:@"%@ %@", helper, helper2];
         
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -156,18 +179,15 @@
         [dateFormatter setLocale:locale];
         [dateFormatter setDateFormat:@"d-MMM-yyyy HH:mm"];
         
-        helper=[eventA substringWithRange:NSMakeRange(5, 11)];
+        helper=[eventA substringWithRange:NSMakeRange(5, i)];
         helper =[helper stringByReplacingOccurrencesOfString:@" "
                                                   withString:@"-"];
         
-        helper2=[eventA substringWithRange:NSMakeRange(16,6)];
+        helper2=[eventA substringWithRange:NSMakeRange(16,i2)];
         eventA=[NSString stringWithFormat:@"%@ %@", helper, helper2];
         
         NSDate *myDate = [dateFormatter dateFromString:eventI];
         NSDate *myDate2 = [dateFormatter dateFromString:eventA];
-
-       // NSDate *dateI = [dateFormat dateFromString:eventI];
-        //NSDate *dateA = [dateFormat dateFromString:eventA];
         
         EKEventStore *store = [EKEventStore new];
         [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {

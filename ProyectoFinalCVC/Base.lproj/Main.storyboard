@@ -59,20 +59,20 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo CVC.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oPg-a6-aNz">
-                                <rect key="frame" x="38" y="190" width="245" height="204"/>
+                                <rect key="frame" x="38" y="147" width="245" height="204"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="204" id="WUg-f8-zjO"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyV-2k-ua1">
-                                <rect key="frame" x="119" y="436" width="82" height="30"/>
+                                <rect key="frame" x="119" y="393" width="82" height="30"/>
                                 <state key="normal" title="Información"/>
                                 <connections>
                                     <segue destination="Vh2-wj-ejl" kind="show" id="XHO-n1-lzb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wh-qd-mn8">
-                                <rect key="frame" x="123" y="474" width="74" height="30"/>
+                                <rect key="frame" x="123" y="431" width="74" height="30"/>
                                 <state key="normal" title="Calendario">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-yG-Wvu">
-                                <rect key="frame" x="116" y="512" width="88" height="30"/>
+                                <rect key="frame" x="116" y="469" width="88" height="30"/>
                                 <state key="normal" title="Contactanos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -96,7 +96,7 @@
                             <constraint firstItem="LyV-2k-ua1" firstAttribute="top" secondItem="oPg-a6-aNz" secondAttribute="bottom" constant="42" id="FyJ-9f-GrP"/>
                             <constraint firstItem="oPg-a6-aNz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="22" id="Hq1-ZN-yA4"/>
                             <constraint firstItem="QcO-yG-Wvu" firstAttribute="top" secondItem="7Wh-qd-mn8" secondAttribute="bottom" constant="8" symbolic="YES" id="V5d-qj-qDH"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QcO-yG-Wvu" secondAttribute="bottom" constant="26" id="fNc-CM-f0V"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QcO-yG-Wvu" secondAttribute="bottom" constant="69" id="fNc-CM-f0V"/>
                             <constraint firstItem="7Wh-qd-mn8" firstAttribute="centerX" secondItem="QcO-yG-Wvu" secondAttribute="centerX" id="gzd-vs-2OG"/>
                             <constraint firstItem="7Wh-qd-mn8" firstAttribute="centerX" secondItem="LyV-2k-ua1" secondAttribute="centerX" id="iyY-bz-YFW"/>
                             <constraint firstItem="LyV-2k-ua1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ssv-9F-FkT"/>
