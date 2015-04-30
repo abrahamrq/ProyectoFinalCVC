@@ -129,12 +129,30 @@
                                     withString:@"ó"];
     p =[p stringByReplacingOccurrencesOfString:@"&uacute;"
                                     withString:@"ú"];
-
+    p =[p stringByReplacingOccurrencesOfString:@"&amp;"
+                                    withString:@"&"];
     p =[p stringByReplacingOccurrencesOfString:@"&nbsp;"
                                     withString:@""];
     cell.detailTextLabel.text =p;
     
-    cell.textLabel.text = [[feeds objectAtIndex:indexPath.row] objectForKey: @"title"];
+    NSString *t= [[[feeds objectAtIndex:indexPath.row] objectForKey: @"title"] stringByReplacingOccurrencesOfString:@"&eacute;" withString:@"é"];
+    
+    t =[t stringByReplacingOccurrencesOfString:@"<br>"
+                                    withString:@""];
+    t =[t stringByReplacingOccurrencesOfString:@"&aacute;"
+                                    withString:@"á"];
+    t =[t stringByReplacingOccurrencesOfString:@"&iacute;"
+                                    withString:@"í"];
+    t =[t stringByReplacingOccurrencesOfString:@"&oacute;"
+                                    withString:@"ó"];
+    t =[t stringByReplacingOccurrencesOfString:@"&uacute;"
+                                    withString:@"ú"];
+    t =[t stringByReplacingOccurrencesOfString:@"&amp;"
+                                    withString:@"&"];
+    t =[t stringByReplacingOccurrencesOfString:@"&nbsp;"
+                                    withString:@""];
+    
+    cell.textLabel.text = t;
     
     // Configure the cell...
     

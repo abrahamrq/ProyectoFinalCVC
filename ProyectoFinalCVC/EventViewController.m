@@ -31,11 +31,30 @@
                                     withString:@"ó"];
     p =[p stringByReplacingOccurrencesOfString:@"&uacute;"
                                     withString:@"ú"];
-    
+    p =[p stringByReplacingOccurrencesOfString:@"&amp;"
+                                    withString:@"&"];
     p =[p stringByReplacingOccurrencesOfString:@"&nbsp;"
                                     withString:@""];
     
-    self.eventlbl.text = self.event;
+    NSString *t= self.event;
+    t =[t stringByReplacingOccurrencesOfString:@"&eacute;"
+                                    withString:@"é"];
+    t =[t stringByReplacingOccurrencesOfString:@"<br>"
+                                    withString:@""];
+    t =[t stringByReplacingOccurrencesOfString:@"&aacute;"
+                                    withString:@"á"];
+    t =[t stringByReplacingOccurrencesOfString:@"&iacute;"
+                                    withString:@"í"];
+    t =[t stringByReplacingOccurrencesOfString:@"&oacute;"
+                                    withString:@"ó"];
+    t =[t stringByReplacingOccurrencesOfString:@"&uacute;"
+                                    withString:@"ú"];
+    t =[t stringByReplacingOccurrencesOfString:@"&amp;"
+                                    withString:@"&"];
+    t =[t stringByReplacingOccurrencesOfString:@"&nbsp;"
+                                    withString:@""];
+    
+    self.eventlbl.text = t;
     self.summarytextview.text = p;
     self.summary=p;
     

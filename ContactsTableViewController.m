@@ -61,10 +61,8 @@
     NSString *messageBody = @"Me gustaria saber cuando podria ir a una cita con usted.";
     // To address
     
-    //NSDictionary *contact = self.contacts[indexPath.row];
-    //NSArray *toRecipents = [NSArray arrayWithObject: [contact objectForKey: @"email"]];
-    
-    NSArray *toRecipents = [NSArray arrayWithObject: @"abraham.rq03@gmail.com"];
+    NSDictionary *contact = self.contacts[indexPath.row];
+    NSArray *toRecipents = [NSArray arrayWithObject: [contact objectForKey: @"email"]];
     
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;
@@ -81,16 +79,16 @@
     switch (result)
     {
         case MFMailComposeResultCancelled:
-            NSLog(@"Mail cancelled");
+            NSLog(@"Correo Cancelado");
             break;
         case MFMailComposeResultSaved:
-            NSLog(@"Mail saved");
+            NSLog(@"Correo Salvado");
             break;
         case MFMailComposeResultSent:
-            NSLog(@"Mail sent");
+            NSLog(@"Correo Mandado");
             break;
         case MFMailComposeResultFailed:
-            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            NSLog(@"Falla en envio de Correo: %@", [error localizedDescription]);
             break;
         default:
             break;
