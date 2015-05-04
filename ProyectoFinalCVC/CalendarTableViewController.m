@@ -94,6 +94,7 @@
     [parser setDelegate:self];
     [parser setShouldResolveExternalEntities:NO];
     [parser parse];
+    
 }
 
 - (void)didReceiveMemoryWarning {

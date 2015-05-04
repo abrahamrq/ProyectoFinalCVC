@@ -7,6 +7,7 @@
 //
 
 #import "ContactsTableViewController.h"
+@import MessageUI;
 
 @interface ContactsTableViewController ()
 
@@ -55,23 +56,36 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    // Email Subject
-    NSString *emailTitle = @"Quisiera agendar una cita";
-    // Email Content
-    NSString *messageBody = @"Me gustaria saber cuando podria ir a una cita con usted.";
-    // To address
     
-    NSDictionary *contact = self.contacts[indexPath.row];
-    NSArray *toRecipents = [NSArray arrayWithObject: [contact objectForKey: @"email"]];
-    
-    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
-    mc.mailComposeDelegate = self;
-    [mc setSubject:emailTitle];
-    [mc setMessageBody:messageBody isHTML:NO];
-    [mc setToRecipients:toRecipents];
-    
-    // Present mail view controller on screen
-    [self presentViewController:mc animated:YES completion:NULL];
+    if ([MFMailComposeViewController canSendMail]){
+        @try {
+            // Email Subject
+            NSString *emailTitle = @"Quisiera agendar una cita";
+            // Email Content
+            NSString *messageBody = @"Me gustaria saber cuando podria ir a una cita con usted.";
+            // To address
+            
+            NSDictionary *contact = self.contacts[indexPath.row];
+            NSArray *toRecipents = [NSArray arrayWithObject: [contact objectForKey: @"email"]];
+            
+            MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+            mc.mailComposeDelegate = self;
+            [mc setSubject:emailTitle];
+            [mc setMessageBody:messageBody isHTML:NO];
+            [mc setToRecipients:toRecipents];
+            
+            // Present mail view controller on screen
+            [self presentViewController:mc animated:YES completion:NULL];
+        }
+        @catch (NSException *exception) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Configura tu mail"
+                                                            message:@"No se puede mandar mail debido a que no esta configurado."
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+    }
 }
 
 - (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eQ2-zc-P7y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eQ2-zc-P7y">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -33,6 +33,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.41176470588235292" green="0.73333333333333328" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -60,47 +61,45 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo CVC.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oPg-a6-aNz">
                                 <rect key="frame" x="38" y="147" width="245" height="204"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="204" id="WUg-f8-zjO"/>
-                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyV-2k-ua1">
-                                <rect key="frame" x="119" y="393" width="82" height="30"/>
-                                <state key="normal" title="Información"/>
-                                <connections>
-                                    <segue destination="Vh2-wj-ejl" kind="show" id="XHO-n1-lzb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wh-qd-mn8">
-                                <rect key="frame" x="123" y="431" width="74" height="30"/>
-                                <state key="normal" title="Calendario">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="qFK-MD-vvu" kind="show" id="T6V-iQ-8Mz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-yG-Wvu">
-                                <rect key="frame" x="116" y="469" width="88" height="30"/>
-                                <state key="normal" title="Contactanos">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="9E8-81-gSn" kind="show" id="slk-aR-bkQ"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBE-su-5wL">
+                                <rect key="frame" x="0.0" y="64" width="320" height="509"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyV-2k-ua1">
+                                        <rect key="frame" x="119" y="334" width="82" height="30"/>
+                                        <state key="normal" title="Información"/>
+                                        <connections>
+                                            <segue destination="Vh2-wj-ejl" kind="show" id="XHO-n1-lzb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-yG-Wvu">
+                                        <rect key="frame" x="116" y="410" width="88" height="30"/>
+                                        <state key="normal" title="Contactanos">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="9E8-81-gSn" kind="show" id="slk-aR-bkQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wh-qd-mn8">
+                                        <rect key="frame" x="123" y="372" width="74" height="30"/>
+                                        <state key="normal" title="Calendario">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="qFK-MD-vvu" kind="show" id="T6V-iQ-8Mz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.41176470588235292" green="0.73333333333333328" blue="0.98039215686274506" alpha="0.19" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oPg-a6-aNz" firstAttribute="centerX" secondItem="LyV-2k-ua1" secondAttribute="centerX" id="2MW-fm-Bcc"/>
-                            <constraint firstItem="LyV-2k-ua1" firstAttribute="top" secondItem="oPg-a6-aNz" secondAttribute="bottom" constant="42" id="FyJ-9f-GrP"/>
-                            <constraint firstItem="oPg-a6-aNz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="22" id="Hq1-ZN-yA4"/>
-                            <constraint firstItem="QcO-yG-Wvu" firstAttribute="top" secondItem="7Wh-qd-mn8" secondAttribute="bottom" constant="8" symbolic="YES" id="V5d-qj-qDH"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QcO-yG-Wvu" secondAttribute="bottom" constant="69" id="fNc-CM-f0V"/>
-                            <constraint firstItem="7Wh-qd-mn8" firstAttribute="centerX" secondItem="QcO-yG-Wvu" secondAttribute="centerX" id="gzd-vs-2OG"/>
-                            <constraint firstItem="7Wh-qd-mn8" firstAttribute="centerX" secondItem="LyV-2k-ua1" secondAttribute="centerX" id="iyY-bz-YFW"/>
-                            <constraint firstItem="LyV-2k-ua1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ssv-9F-FkT"/>
-                            <constraint firstItem="7Wh-qd-mn8" firstAttribute="top" secondItem="LyV-2k-ua1" secondAttribute="bottom" constant="8" symbolic="YES" id="y5a-qr-iUo"/>
+                            <constraint firstItem="oPg-a6-aNz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="22" id="3WJ-0G-Pww"/>
+                            <constraint firstItem="oPg-a6-aNz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="E06-uB-o85"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oPg-a6-aNz" secondAttribute="bottom" constant="217" id="Jbq-hH-8ui"/>
+                            <constraint firstItem="oPg-a6-aNz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="83" id="Or2-rI-dIi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Inicio" id="bkW-oQ-61Z"/>
@@ -138,6 +137,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.071296674582815953" green="0.61469385758460682" blue="0.97601595325630253" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="cZ8-M0-Ka0" kind="show" identifier="showDetail" id="qCR-3m-lrM"/>
                                 </connections>
@@ -166,46 +166,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSt-eJ-wPL">
-                                <rect key="frame" x="58" y="113" width="205" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRK-7X-DNR">
-                                <rect key="frame" x="88" y="485" width="145" height="30"/>
-                                <state key="normal" title="Agregar a Calendario">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="addToCalendar:" destination="cZ8-M0-Ka0" eventType="touchUpInside" id="gmt-dp-5zn"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-R8-SMN">
-                                <rect key="frame" x="40" y="190" width="239" height="239"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="188" id="uH2-Ns-tdN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyH-Ni-qBf">
+                                <rect key="frame" x="16" y="82" width="288" height="478"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-R8-SMN">
+                                        <rect key="frame" x="25" y="121" width="239" height="163"/>
+                                        <color key="backgroundColor" red="0.35722069554954022" green="0.83022108134652994" blue="0.93245688900560231" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="188" id="uH2-Ns-tdN"/>
+                                        </constraints>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRK-7X-DNR">
+                                        <rect key="frame" x="72" y="389" width="145" height="30"/>
+                                        <state key="normal" title="Agregar a Calendario">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addToCalendar:" destination="cZ8-M0-Ka0" eventType="touchUpInside" id="gmt-dp-5zn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEm-Io-t9U">
+                                        <rect key="frame" x="25" y="28" width="239" height="65"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.5607843137254902" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.88663983585858586" green="0.88663983585858586" blue="0.88663983585858586" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="AFN-R8-SMN" firstAttribute="leading" secondItem="c0u-cS-DeU" secondAttribute="leadingMargin" constant="24" id="OF2-nf-ga8"/>
-                            <constraint firstItem="AFN-R8-SMN" firstAttribute="centerY" secondItem="c0u-cS-DeU" secondAttribute="centerY" id="ZfJ-TN-dSf"/>
-                            <constraint firstItem="AFN-R8-SMN" firstAttribute="centerX" secondItem="c0u-cS-DeU" secondAttribute="centerX" id="aeo-MC-p1G"/>
-                            <constraint firstItem="AFN-R8-SMN" firstAttribute="centerX" secondItem="lSt-eJ-wPL" secondAttribute="centerX" id="eOf-qZ-PFB"/>
-                            <constraint firstItem="AFN-R8-SMN" firstAttribute="centerX" secondItem="oRK-7X-DNR" secondAttribute="centerX" id="mx8-mO-zOp"/>
-                            <constraint firstItem="IGs-Uf-bSd" firstAttribute="top" secondItem="oRK-7X-DNR" secondAttribute="bottom" constant="53" id="ubu-4f-hRR"/>
-                            <constraint firstItem="AFN-R8-SMN" firstAttribute="top" secondItem="lSt-eJ-wPL" secondAttribute="bottom" constant="56" id="xIC-15-8qa"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.4823529411764706" green="0.75294117647058822" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="addbutton" destination="oRK-7X-DNR" id="IxT-f8-D0h"/>
-                        <outlet property="eventlbl" destination="lSt-eJ-wPL" id="0Im-YV-zbp"/>
+                        <outlet property="eventlbl" destination="eEm-Io-t9U" id="pc1-HL-48Z"/>
                         <outlet property="summarytextview" destination="AFN-R8-SMN" id="Vs9-WE-3sn"/>
                     </connections>
                 </viewController>

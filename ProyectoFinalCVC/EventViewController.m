@@ -60,6 +60,7 @@
     
     if([[self.summary substringWithRange:NSMakeRange(0, 17)] isEqualToString:@"Evento recurrente"])
         self.addbutton.enabled = NO;
+    [self.eventlbl sizeToFit];
 }
 
 - (void)didReceiveMemoryWarning {
