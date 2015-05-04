@@ -86,6 +86,14 @@
             [alert show];
         }
     }
+    else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Configura tu mail"
+                                                        message:@"No se puede mandar mail debido a que no esta configurado."
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
